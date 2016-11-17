@@ -11,5 +11,6 @@ Impactor can be used from all user that want to unroot their phone, It's the mai
 - [x] Root backup & Restore
 - [x] SuperUser apps backup & Restore
 - [x] Self updater
+
 ### Open Source?
 I decided to push on github only the Server-Side Impactor mechanisms. I'll probably release it
