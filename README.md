@@ -14,3 +14,6 @@ Impactor can be used from all user that want to unroot their phone, It's the mai
 
 ### Open Source?
 I decided to push on github only the Server-Side Impactor mechanisms. I'll probably release it
+
+### CSV?
+String VersionName,String Version,int VersionNumber,int BuildNumber,boolean securityPatches,String Changelog
