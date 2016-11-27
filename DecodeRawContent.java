@@ -21,13 +21,14 @@ class DecodeRawContent {
 
     DecodeRawContent(String FileContent) {
         String[] RawContent = FileContent.split(",");
+        RawContent[5] = RawContent[5].replace("@V", ",");
 
-        this.VersionName = RawContent[0].replace("@V", ",");
-        this.Version = RawContent[1].replace("@V", ",");
+        this.VersionName = RawContent[0];
+        this.Version = RawContent[1];
         this.VersionNumber = Integer.valueOf(RawContent[2]);
         this.BuildNumber = Integer.valueOf(RawContent[3]);
         this.SecurityPatches = Boolean.getBoolean(RawContent[4]);
-        this.ChangeLog = RawContent[5].replace("@V", ",");
+        this.ChangeLog = RawContent[5];
     }
 
     DecodeRawContent(String VersionNameString, String VersionString, int VersionNumberString, int VersionCodeString, boolean implementsPatches, String ChangelogString) {
