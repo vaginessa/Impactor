@@ -10,10 +10,10 @@ Impactor can be used from all user that want to unroot their phone, It's the mai
 - [x] Rebooter
 - [x] Root backup & Restore
 - [x] SuperUser apps backup & Restore
-- [x] Self updater
+- [x] Updater
 
 ### Open Source?
 I decided to push on github only the Server-Side Impactor mechanisms. I'll probably release it
 
 ### CSV?
-String VersionName,String Version,int VersionNumber,int BuildNumber,boolean securityPatches,String Changelog
+`String VersionName,String Version,int VersionNumber,int BuildNumber,boolean securityPatches,String Changelog`
