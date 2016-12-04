@@ -17,5 +17,5 @@ I decided to push on github only the Server-Side Impactor mechanisms. I'll proba
 
 ### CSV?
 ```java
-String VersionName,String Version,int VersionNumber,int BuildNumber,boolean securityPatches,String ITChangelog, String ENChangelog
+String VersionName,String Version,int VersionNumber,int BuildNumber,boolean securityPatches,String Changelog
 ```
