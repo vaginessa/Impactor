@@ -17,39 +17,34 @@ class DecodeRawContent {
     private int VersionNumber = 0;
     private int BuildNumber = 0;
     private boolean SecurityPatches = false;
-    private String ITChangeLog = "";
-    private String ENChangeLog = "";
+    private String ChangeLog = "";
 
     DecodeRawContent(String FileContent) {
         String[] RawContent = FileContent.split(",");
         RawContent[5] = RawContent[5].replace("@V", ",");
         RawContent[5] = RawContent[5].replace("@v", ",");
-        RawContent[6] = RawContent[6].replace("@V", ",");
-        RawContent[6] = RawContent[6].replace("@v", ",");
 
         this.VersionName = RawContent[0];
         this.Version = RawContent[1];
         this.VersionNumber = Integer.valueOf(RawContent[2]);
         this.BuildNumber = Integer.valueOf(RawContent[3]);
         this.SecurityPatches = Boolean.getBoolean(RawContent[4]);
-        this.ITChangeLog = RawContent[5];
-        this.ENChangeLog = RawContent[5];
+        this.ChangeLog = RawContent[5];
     }
 
-    DecodeRawContent(String VersionNameString, String VersionString, int VersionNumberString, int VersionCodeString, boolean implementsPatches, String ITChangelogString, String EnChangelogString) {
+    DecodeRawContent(String VersionNameString, String VersionString, int VersionNumberString, int VersionCodeString, boolean implementsPatches, String ChangelogString) {
         this.VersionName = VersionNameString;
         this.Version = VersionString;
         this.VersionNumber = VersionNumberString;
         this.BuildNumber = VersionCodeString;
         this.SecurityPatches = implementsPatches;
-        this.ITChangeLog = String.valueOf(ITChangelogString);
-        this.ENChangeLog = String.valueOf(EnChangelogString);
+        this.ChangeLog = String.valueOf(ChangelogString);
     }
 
     @Contract(pure = true)
     public final String toString()
     {
-        return String.valueOf(VersionNumber) + String.valueOf(BuildNumber) + String.valueOf(SecurityPatches) + String.valueOf(ITChangeLog);
+        return String.valueOf(VersionNumber) + String.valueOf(BuildNumber) + String.valueOf(SecurityPatches) + String.valueOf(ChangeLog);
     }
 
     @Contract(pure = true)
@@ -75,12 +70,7 @@ class DecodeRawContent {
 
     @Contract(pure = true)
     final String getChangeLogIT() {
-        return ITChangeLog;
-    }
-
-    @Contract(pure = true)
-    final String getChangeLogEN() {
-        return ENChangeLog;
+        return ChangeLog;
     }
 
     @Contract(pure = true)
