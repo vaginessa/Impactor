@@ -23,6 +23,8 @@ class DecodeRawContent {
         String[] RawContent = FileContent.split(",");
         RawContent[5] = RawContent[5].replace("@V", ",");
         RawContent[5] = RawContent[5].replace("@v", ",");
+        RawContent[5] = RawContent[5].replace("@N", "\n");
+        RawContent[5] = RawContent[5].replace("@n", "\n");
 
         this.VersionName = RawContent[0];
         this.Version = RawContent[1];
@@ -69,7 +71,7 @@ class DecodeRawContent {
     }
 
     @Contract(pure = true)
-    final String getChangeLogIT() {
+    final String getChangeLog() {
         return ChangeLog;
     }
 
