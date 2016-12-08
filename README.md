@@ -15,6 +15,10 @@ Impactor can be used from all user that want to unroot their phone, It's the mai
 ### Open Source?
 I decided to push on github only the Server-Side Impactor mechanisms. I'll probably release it
 
+### Special Chars?
+@V or @v to get ","
+@N or @n to get "\n"
+
 ### CSV?
 ```java
 String VersionName,String Version,int VersionNumber,int BuildNumber,boolean securityPatches,String Changelog
