@@ -1,1 +1,1 @@
-Impactor 4.1.0,4.1.0,410,49,true,This small update fix some problems in views and strings@V also a bug in UpdateActivity. UI fix Only for tablet layouts. It also fix an issue with Version Number,true
+Impactor 4.1.0,4.1.0,410,49,false,This update is focused on performance and velocity fixes, Infact we re-wrote the Application. Now it\'s based on threads and Synchronized Tasks:It mean that you can use the app the fastest than ever.\nMinor fixes and ANR Patches,true
