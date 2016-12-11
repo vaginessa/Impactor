@@ -1,1 +1,1 @@
-Impactor 4.2.0,4.2.0,420,50,false,This update is focused on performance and velocity fixes@V Infact we re-wrote the Application. Now it\'s based on threads and Synchronized Tasks:It mean that you can use the app the fastest than ever.\nMinor fixes and ANR Patches,false
+Impactor 4.1.0,4.1.0,410,49,false,This update is focused on performance and velocity fixes@V Infact we re-wrote the Application. Now it\'s based on threads and Synchronized Tasks:It mean that you can use the app the fastest than ever.\nMinor fixes and ANR Patches,true
