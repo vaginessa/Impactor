@@ -1,0 +1,39 @@
+{
+  "build-id": "60",
+  "build-version": "450",
+  "build-meta": {
+      "build-security-patches": "false",
+      "build-bugfixes": "false",
+      "build-dist-upgrade": "true",
+      "build-upgrade-level": "5"
+  },
+  
+  "global": {
+      "blocked": "false",
+      "play-store-users": "1000",
+  },
+ 
+  "app-name": "Impactor",
+  "app-version": "4.5.0",
+  "app-new-update-text": "New update found!",
+  "app-new-version": "Impactor 4.5.0",
+  "app-new-version-small-screen": "Impactor 4.5.0",
+  
+  "behavior": {
+      "notify": {
+          "notification": "true",
+          "notification-type": ["true", "false", "true"],
+          "dialog": "true",
+          "dialog-type": ["true", "false", "true"],
+          "drawer-item": "false",
+          "drawer-item-type": ["true", "false"]
+      },
+      "activity": {
+          "start-separed-activity": "false",
+          "start-emergency-actvity": "false",
+          "intent-playstore-uri": "https://play.google.com/store/apps/details?id=com.andreacioccarelli.impactor",
+          "intent-download-page-uri": "",
+          "intent-raw-apk-uri": ""
+      },
+  },
+}
