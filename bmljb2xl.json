@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.0",
-  "latestVersionCode": "1",
+  "latestVersion": "1.1.0",
+  "latestVersionCode": "2",
   "url": "https://github.com/AndreaCioccarelli/Impactor/blob/master/bin/app-debug.apk?raw=true",
-  "releaseNotes": "Nuova versione disponibile (1.0.0). Questo aggiornamento migliora le prestazioni dell'app"
+  "releaseNotes": "Questo aggiornamento migliora le funzioni presenti in MusicDownloader e ne aggiunge di nuove, fisolve un problema di traduzione e di networking"
 }
